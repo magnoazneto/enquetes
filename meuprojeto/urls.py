@@ -19,5 +19,7 @@ from enquetes import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('bemvindo/', views.bemvindo)
+    path('bemvindo/', views.bemvindo),
+    path('perfil/<int:perfil_id>', views.exibir),
+    path('enquetes/<int:enquete_id>', views.get_enquete)
 ]
